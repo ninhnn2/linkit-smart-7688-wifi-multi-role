@@ -4,6 +4,12 @@ This is a doc for enabling both Wi-Fi access point and station mode simultaneous
 
 ## Usage
 
+0. Đầu tiên check lệnh sau để biết tên config của wifi (wireless.sta.ssid)
+
+    ```
+    uci show wireless
+    ```
+    
 1. Do a factory reset or configure 7688's Wi-Fi to AP mode.
 
 2. Download [ralink.sh](https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-wifi-multi-role/master/files/lib/netifd/wireless/ralink.sh) to 7688 board and replace the built-in file `/lib/netifd/wireless/ralink.sh`.
