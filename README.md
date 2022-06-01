@@ -27,25 +27,25 @@ This is a doc for enabling both Wi-Fi access point and station mode simultaneous
     a. Replace `<SSID>` with the SSID on the Wi-Fi router you want to connect to.
 
     ```
-    uci set wireless.sta.ssid="<SSID>"
+    uci set wireless.radio0="<SSID>"
     ```
 
     b. Replace `<KEY>` with the corresponding password of the above SSID.
 
     ```
-    uci set wireless.sta.key="<KEY>"
+    uci set wireless.radio0.key="<KEY>"
     ```
 
     c. Set encryption type to WPA-PSK.
 
     ```
-    uci set wireless.sta.encryption="psk"
+    uci set wireless.radio0.encryption="psk"
     ```
 
     d. Enable Wi-Fi station mode.
 
     ```
-    uci set wireless.sta.disabled="0"
+    uci set wireless.radio0.disabled="0"
     ```
 
     e. Apply the modified config.
