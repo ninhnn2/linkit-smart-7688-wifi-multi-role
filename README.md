@@ -27,7 +27,7 @@ This is a doc for enabling both Wi-Fi access point and station mode simultaneous
     a. Replace `<SSID>` with the SSID on the Wi-Fi router you want to connect to.
 
     ```
-    uci set wireless.radio0="<SSID>"
+    uci set wireless.radio0.ssid="<SSID>"
     ```
 
     b. Replace `<KEY>` with the corresponding password of the above SSID.
